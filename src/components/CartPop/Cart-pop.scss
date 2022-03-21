@@ -1,0 +1,47 @@
+.cart-pop {
+  top: 47px;
+  right: -10px;
+  width: 300px;
+  min-height: 300px;
+  max-height: 600px;
+  background-color: gray;
+
+  padding: 10px 20px;
+  &_shown {
+    position: absolute;
+  }
+  &_hidden {
+    display: none;
+  }
+  &__card {
+    background-color: white;
+
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .cart-pop-card-info {
+      display: flex;
+      gap: 5px;
+      p:last-of-type {
+        border: 1px solid red;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    .amount-change {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 3px 10px;
+      border: 1px solid #000;
+      border-radius: 10px;
+    }
+  }
+}

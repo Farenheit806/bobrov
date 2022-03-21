@@ -1,0 +1,57 @@
+.card-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+
+  padding: 10px 0;
+}
+.cart {
+  position: relative;
+  &__counter {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding-top: 1px;
+    background-color: #e46057;
+    outline: 1px solid black;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+  }
+  &__img {
+    height: 30px;
+  }
+}
+.results {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.catalog-bar {
+  background-color: gray;
+  padding: 15px 30px 15px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    input[type="search"] {
+      padding: 10px 15px;
+      border-radius: 20px;
+      border: none;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      border-radius: 20px;
+      border: none;
+    }
+  }
+}
+.filter {
+  background-color: gray;
+}

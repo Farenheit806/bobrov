@@ -1,0 +1,30 @@
+.header {
+  background-color: lightgray;
+}
+.navigation {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    // flex-grow: 1;
+    .logo {
+      height: 60px;
+    }
+    a {
+      font-weight: bold;
+      text-decoration: none;
+      list-style-type: none;
+
+      color: rgb(94, 94, 94);
+      &:hover {
+        color: rgb(20, 20, 20);
+      }
+    }
+  }
+}

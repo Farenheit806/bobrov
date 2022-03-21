@@ -1,0 +1,20 @@
+.card {
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  border: 1px solid black;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 3px 5px;
+  }
+}
